@@ -2,7 +2,7 @@ var streamingSocket;
 
 function startStreaming ( onTickFunction )
 {
-  streamingSocket = io.connect('http://api-sandbox.oanda.com', {'force new connection':true , resource:'ratestream'});   // forcing due to socket.io bug
+  streamingSocket = io.connect('https://oandadev-fxpractice.apigee.net', {'force new connection':true , resource:'weather'});   // forcing due to socket.io bug
   
   streamingSocket.on('connect', function () {
   
